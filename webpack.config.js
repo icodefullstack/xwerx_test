@@ -3,7 +3,6 @@ var webpack = require('webpack');
 module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
-    'script!foundation-sites/dist/foundation.min.js',
     './app/app.jsx'
   ],
   externals: {
@@ -23,7 +22,8 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
-      applicationStyles: 'app/app.sass'
+      applicationStyles: 'app/app.sass',
+      store: 'app/redux/store.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },

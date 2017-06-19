@@ -1,17 +1,20 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
-var Main = require('Main');
+var Main = require('./components/main');
+var {Provider} = require('react-redux');
 
 
-// Load foundation
-require('style!css!foundation-sites/dist/foundation.min.css')
-$(document).foundation();
+require('style!css!sass!applicationStyles');
 
-// App css
-require('style!css!sass!applicationStyles')
+var store = require('store');
+
+store.subscribe(()=>{});
+
 
 ReactDOM.render(
-  <Main />,
+  <Provider store={store}>
+    <Main />
+  </Provider>,
   document.getElementById('app')
 );
