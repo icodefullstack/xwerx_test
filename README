@@ -1,0 +1,15 @@
+1. This test can be served from a node server. For that you have to execute the server.js file.
+
+2. This test can be served from an apache server like WAMP , XAMP etc. Serve the index file in the public folder.
+
+3. TECHNOLOGIES USED
+  a. React
+  b. Redux
+
+  c. SASS
+  d. webpack
+
+  e. ChartJS
+  f. Bootstrap
+
+4. As per request I did not try to do a full size app, but the starting setup rather.
